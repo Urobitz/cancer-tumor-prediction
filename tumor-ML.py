@@ -12,7 +12,7 @@ x = df[["radius_mean", "texture_mean", "perimeter_mean", "area_mean",
         "concave points_mean", "shape_irregularity", "border_complexity",  "radius_texture_interaction", 
         "radius_concavity_interaction", "concavity_density"]]
 #Y is the output or what we want to predict
-y = df["diagnosis"]
+y = df["malignancy_risk_score"]
 
 #divides each variable in 2, thats why there are 4 variables
 x_train_input, x_test_input, y_train_input, y_test_input = train_test_split(x,y,test_size=0.2, random_state=42)
